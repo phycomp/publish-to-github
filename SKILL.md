@@ -27,6 +27,12 @@ End-to-end workflow for turning a local folder into a published GitHub repositor
   ```
   Or use the GitHub login/email from `gh api user`.
 
+## Security gate (required for skills)
+
+Before publishing any skill, run the `audit-skill` skill on the folder and obtain
+an APPROVE or CAUTION verdict. Do not publish a skill with a REJECT verdict
+without explicit user consent.
+
 ## Workflow A — Publish a local folder as a new repo
 
 1. **Clean the folder.** Remove build artifacts, caches, secrets:
