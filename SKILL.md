@@ -117,5 +117,3 @@ gh repo create publish-to-github --public --source=. --remote=origin --push
 gh repo edit phycomp/publish-to-github --add-topic agent-skill --add-topic github
 gh release create v1.0.0 --title "v1.0.0" --notes "Initial release."
 ```
-EOF
-echo "written"
